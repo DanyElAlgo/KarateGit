@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="examples.ExamplesTest" time="9.812" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\2025\Desktop\Universidad\Semestre 5\QA\KarateGit\target\test-classes;C:\Users\2025\Desktop\Universidad\Semestre 5\QA\KarateGit\target\classes;C:\Users\2025\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\2025\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\2025\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\2025\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\2025\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\2025\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\2025\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\2025\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\2025\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\2025\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\2025\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\2025\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\2025\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\2025\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\2025\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\2025\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\2025\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\2025\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\2025\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\2025\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\2025\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\2025\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\2025\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\2025\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\2025\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\2025\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\2025\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\2025\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\2025\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\2025\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\2025\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\2025\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\2025\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\2025\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\2025\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\2025\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\2025\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\2025\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\2025\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\2025\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\2025\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\2025\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\2025\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\2025\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\2025\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\2025\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\2025\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\2025\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\2025\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/La_Paz"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BO"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\2025\AppData\Local\Temp\surefire9199952129270629475\surefirebooter-20250429135707912_3.jar C:\Users\2025\AppData\Local\Temp\surefire9199952129270629475 2025-04-29T13-57-07_666-jvmRun1 surefire-20250429135707912_1tmp surefire_0-20250429135707912_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\2025\Desktop\Universidad\Semestre 5\QA\KarateGit\target\test-classes;C:\Users\2025\Desktop\Universidad\Semestre 5\QA\KarateGit\target\classes;C:\Users\2025\.m2\repository\io\karatelabs\karate-junit5\1.5.0\karate-junit5-1.5.0.jar;C:\Users\2025\.m2\repository\io\karatelabs\karate-core\1.5.0\karate-core-1.5.0.jar;C:\Users\2025\.m2\repository\org\graalvm\js\js-scriptengine\24.0.0\js-scriptengine-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\polyglot\polyglot\24.0.0\polyglot-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\sdk\collections\24.0.0\collections-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\sdk\nativeimage\24.0.0\nativeimage-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\sdk\word\24.0.0\word-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\js\js-language\24.0.0\js-language-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\regex\regex\24.0.0\regex-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\truffle\truffle-api\24.0.0\truffle-api-24.0.0.jar;C:\Users\2025\.m2\repository\org\graalvm\shadowed\icu4j\24.0.0\icu4j-24.0.0.jar;C:\Users\2025\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\2025\.m2\repository\ognl\ognl\3.3.4\ognl-3.3.4.jar;C:\Users\2025\.m2\repository\org\javassist\javassist\3.29.0-GA\javassist-3.29.0-GA.jar;C:\Users\2025\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\2025\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\2025\.m2\repository\com\linecorp\armeria\armeria\1.29.2\armeria-1.29.2.jar;C:\Users\2025\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\2025\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\2025\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\2025\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\2025\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\2025\.m2\repository\io\micrometer\micrometer-core\1.13.0\micrometer-core-1.13.0.jar;C:\Users\2025\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\2025\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\2025\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.1\HdrHistogram-2.2.1.jar;C:\Users\2025\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport\4.1.110.Final\netty-transport-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-common\4.1.110.Final\netty-common-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-buffer\4.1.110.Final\netty-buffer-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-resolver\4.1.110.Final\netty-resolver-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-codec-haproxy\4.1.110.Final\netty-codec-haproxy-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-codec\4.1.110.Final\netty-codec-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-codec-http2\4.1.110.Final\netty-codec-http2-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-handler\4.1.110.Final\netty-handler-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-codec-http\4.1.110.Final\netty-codec-http-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-resolver-dns\4.1.110.Final\netty-resolver-dns-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-codec-dns\4.1.110.Final\netty-codec-dns-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-linux-aarch_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final-osx-aarch_64.jar;C:\Users\2025\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\2025\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\2025\.m2\repository\io\netty\netty-handler-proxy\4.1.110.Final\netty-handler-proxy-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-codec-socks\4.1.110.Final\netty-codec-socks-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.110.Final\netty-transport-native-unix-common-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.110.Final\netty-transport-classes-epoll-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-epoll\4.1.110.Final\netty-transport-native-epoll-4.1.110.Final-linux-aarch_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.110.Final\netty-transport-classes-kqueue-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-resolver-dns-classes-macos\4.1.110.Final\netty-resolver-dns-classes-macos-4.1.110.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.110.Final\netty-transport-native-kqueue-4.1.110.Final-osx-aarch_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-resolver-dns-native-macos\4.1.110.Final\netty-resolver-dns-native-macos-4.1.110.Final-osx-aarch_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-tcnative-classes\2.0.65.Final\netty-tcnative-classes-2.0.65.Final.jar;C:\Users\2025\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-linux-aarch_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-x86_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-osx-aarch_64.jar;C:\Users\2025\.m2\repository\io\netty\netty-tcnative-boringssl-static\2.0.65.Final\netty-tcnative-boringssl-static-2.0.65.Final-windows-x86_64.jar;C:\Users\2025\.m2\repository\com\aayushatharva\brotli4j\brotli4j\1.16.0\brotli4j-1.16.0.jar;C:\Users\2025\.m2\repository\com\aayushatharva\brotli4j\service\1.16.0\service-1.16.0.jar;C:\Users\2025\.m2\repository\com\aayushatharva\brotli4j\native-windows-x86_64\1.16.0\native-windows-x86_64-1.16.0.jar;C:\Users\2025\.m2\repository\org\apache\httpcomponents\httpclient\4.5.14\httpclient-4.5.14.jar;C:\Users\2025\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\2025\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\2025\.m2\repository\ch\qos\logback\logback-classic\1.5.4\logback-classic-1.5.4.jar;C:\Users\2025\.m2\repository\ch\qos\logback\logback-core\1.5.4\logback-core-1.5.4.jar;C:\Users\2025\.m2\repository\org\slf4j\jcl-over-slf4j\2.0.12\jcl-over-slf4j-2.0.12.jar;C:\Users\2025\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\2025\.m2\repository\org\antlr\antlr4-runtime\4.13.1\antlr4-runtime-4.13.1.jar;C:\Users\2025\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\2025\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\2025\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\2025\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\2025\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\2025\.m2\repository\de\siegmar\fastcsv\3.1.0\fastcsv-3.1.0.jar;C:\Users\2025\.m2\repository\info\picocli\picocli\4.7.5\picocli-4.7.5.jar;C:\Users\2025\.m2\repository\io\github\classgraph\classgraph\4.8.170\classgraph-4.8.170.jar;C:\Users\2025\.m2\repository\io\github\t12y\resemble\1.1.0\resemble-1.1.0.jar;C:\Users\2025\.m2\repository\io\github\t12y\ssim\1.0.0\ssim-1.0.0.jar;C:\Users\2025\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\2025\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\2025\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\2025\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\2025\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\2025\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\2025"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\2025\Desktop\Universidad\Semestre 5\QA\KarateGit"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\2025\AppData\Local\Temp\surefire9199952129270629475\surefirebooter-20250429135707912_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.7+6-LTS"/>
+    <property name="user.name" value="2025"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.7+6"/>
+    <property name="localRepository" value="C:\Users\2025\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\2025\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="C:\Users\2025\Desktop\Universidad\Semestre 5\QA\KarateGit"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-21.0.7.6-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\PuTTY\;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-1.8\bin;C:\Program Files\Java\jdk-1.8;C:\Program Files\Java\jre1.8.0_451\bin;C:\Program Files\Java\jre1.8.0_451;C:\gradle-8.14\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.9\bin;C:\Users\2025\AppData\Local\Microsoft\WindowsApps;C:\Users\2025\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\2025\.dotnet\tools;C:\Users\2025\AppData\Local\GitHubDesktop\bin;C:\Users\2025\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\2025\AppData\Roaming\npm;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2025.1\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.7+6-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testParallel" classname="examples.ExamplesTest" time="9.771">
+    <failure message="status code was: 405, expected: 200, response time in milliseconds: 594, url: https://petstore.swagger.io/v2/pet/5001, response: &#10;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#10;classpath:examples/PetStore/UpdatePet.feature:24&#10;classpath:examples/PetStore/AAAAAA.feature:10&#10;status code was: 405, expected: 200, response time in milliseconds: 2362, url: https://petstore.swagger.io/v2/pet/5001, response: &#10;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;&lt;apiResponse&gt;&lt;type&gt;unknown&lt;/type&gt;&lt;/apiResponse&gt;&#10;classpath:examples/PetStore/UpdatePet.feature:24 ==&gt; expected: &lt;0&gt; but was: &lt;2&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+status code was: 405, expected: 200, response time in milliseconds: 594, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24
+classpath:examples/PetStore/AAAAAA.feature:10
+status code was: 405, expected: 200, response time in milliseconds: 2362, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24 ==> expected: <0> but was: <2>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+]]></failure>
+    <system-out><![CDATA[13:57:10.870 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:57:10.881 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:57:12.592 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:12.592 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:12.592 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:12.592 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:12.592 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:13.007 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > PUT https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:13.007 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:13.007 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > DELETE https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:13.007 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 139
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:13.007 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 139
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:15.377 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 2362
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:17 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:15.377 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2362
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:17 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":5001,"category":{"id":0,"name":"cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:15.377 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 2362
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:17 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:15.377 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2362
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:17 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"5001"}
+
+13:57:15.377 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 2362
+1 < 405
+1 < Date: Tue, 29 Apr 2025 17:57:17 GMT
+1 < Content-Type: application/xml
+1 < Content-Length: 102
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+
+13:57:15.453 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/PetStore/UpdatePet.feature:24
+Then status 200
+status code was: 405, expected: 200, response time in milliseconds: 2362, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24
+13:57:15.507 [pool-2-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'petId' with new value: 5001
+13:57:15.516 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+---------------------------------------------------------
+feature: classpath:examples/PetStore/1.CreatePet.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 2,8109
+---------------------------------------------------------
+
+13:57:16.512 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:examples/PetStore/1.CreatePet.feature
+---------------------------------------------------------
+feature: classpath:examples/PetStore/2.GetPet.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 2,8089
+---------------------------------------------------------
+
+13:57:16.644 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 5 (3 remaining) classpath:examples/PetStore/2.GetPet.feature
+---------------------------------------------------------
+feature: classpath:examples/PetStore/3.DeletePet.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 2,7470
+---------------------------------------------------------
+
+13:57:16.731 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:examples/PetStore/3.DeletePet.feature
+13:57:17.394 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1876
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:19 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:17.427 [pool-2-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'petId' with new value: 5001
+13:57:17.433 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > PUT https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:18.028 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 594
+1 < 405
+1 < Date: Tue, 29 Apr 2025 17:57:20 GMT
+1 < Content-Type: application/xml
+1 < Content-Length: 102
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+
+13:57:18.032 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/PetStore/UpdatePet.feature:24
+Then status 200
+status code was: 405, expected: 200, response time in milliseconds: 594, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24
+13:57:18.033 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/PetStore/AAAAAA.feature:10
+* call read('UpdatePet.feature') { petId: '#(petId)' }
+status code was: 405, expected: 200, response time in milliseconds: 594, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24
+classpath:examples/PetStore/AAAAAA.feature:10
+---------------------------------------------------------
+feature: classpath:examples/PetStore/AAAAAA.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 5,3908
+---------------------------------------------------------
+
+13:57:18.471 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 5 (1 remaining) classpath:examples/PetStore/AAAAAA.feature
+---------------------------------------------------------
+feature: classpath:examples/PetStore/UpdatePet.feature
+scenarios:  1 | passed:  0 | failed:  1 | time: 2,7936
+---------------------------------------------------------
+
+13:57:18.552 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 5 (0 remaining) classpath:examples/PetStore/UpdatePet.feature
+Karate version: 1.5.0
+======================================================
+elapsed:   8,90 | threads:    5 | thread time: 16,55 
+features:     5 | skipped:    0 | efficiency: 0,37
+scenarios:    5 | passed:     3 | failed: 2
+======================================================
+>>> failed features:
+status code was: 405, expected: 200, response time in milliseconds: 594, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24
+classpath:examples/PetStore/AAAAAA.feature:10
+status code was: 405, expected: 200, response time in milliseconds: 2362, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24
+<<<
+
+HTML report: (paste into browser to view) | Karate version: 1.5.0
+file:///C:/Users/2025/Desktop/Universidad/Semestre%205/QA/KarateGit/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+    <system-err><![CDATA[line 1:0 token recognition error at: 'f'
+line 1:1 token recognition error at: 'u'
+line 1:2 token recognition error at: 'l'
+line 1:3 token recognition error at: 'l'
+line 1:4 token recognition error at: '_'
+line 1:5 token recognition error at: 'f'
+line 1:6 token recognition error at: 'l'
+line 1:7 token recognition error at: 'o'
+line 1:8 token recognition error at: 'w'
+line 1:9 token recognition error at: '_'
+line 1:10 token recognition error at: 'p'
+line 1:11 token recognition error at: 'e'
+line 1:12 token recognition error at: 't'
+line 1:13 token recognition error at: '.'
+line 1:14 token recognition error at: 'f'
+line 1:15 token recognition error at: 'e'
+line 1:16 token recognition error at: 'a'
+line 1:17 token recognition error at: 't'
+line 1:18 token recognition error at: 'u'
+line 1:19 token recognition error at: 'r'
+line 1:20 token recognition error at: 'e'
+line 1:21 token recognition error at: ' ('
+line 1:23 token recognition error at: 'O'
+line 1:24 token recognition error at: 'r'
+line 1:25 token recognition error at: 'q'
+line 1:26 token recognition error at: 'u'
+line 1:27 token recognition error at: 'e'
+line 1:28 token recognition error at: 's'
+line 1:29 token recognition error at: 't'
+line 1:30 token recognition error at: 'a'
+line 1:31 token recognition error at: 'd'
+line 1:32 token recognition error at: 'o'
+line 1:33 token recognition error at: 'r'
+line 1:34 token recognition error at: ')'
+line 1:0 token recognition error at: 'f'
+line 1:1 token recognition error at: 'u'
+line 1:2 token recognition error at: 'l'
+line 1:3 token recognition error at: 'l'
+line 1:4 token recognition error at: '_'
+line 1:5 token recognition error at: 'f'
+line 1:6 token recognition error at: 'l'
+line 1:7 token recognition error at: 'o'
+line 1:8 token recognition error at: 'w'
+line 1:9 token recognition error at: '_'
+line 1:10 token recognition error at: 'p'
+line 1:11 token recognition error at: 'e'
+line 1:12 token recognition error at: 't'
+line 1:13 token recognition error at: '.'
+line 1:14 token recognition error at: 'f'
+line 1:15 token recognition error at: 'e'
+line 1:16 token recognition error at: 'a'
+line 1:17 token recognition error at: 't'
+line 1:18 token recognition error at: 'u'
+line 1:19 token recognition error at: 'r'
+line 1:20 token recognition error at: 'e'
+line 1:21 token recognition error at: ' ('
+line 1:23 token recognition error at: 'O'
+line 1:24 token recognition error at: 'r'
+line 1:25 token recognition error at: 'q'
+line 1:26 token recognition error at: 'u'
+line 1:27 token recognition error at: 'e'
+line 1:28 token recognition error at: 's'
+line 1:29 token recognition error at: 't'
+line 1:30 token recognition error at: 'a'
+line 1:31 token recognition error at: 'd'
+line 1:32 token recognition error at: 'o'
+line 1:33 token recognition error at: 'r'
+line 1:34 token recognition error at: ')'
+]]></system-err>
+  </testcase>
+</testsuite>

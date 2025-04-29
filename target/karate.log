@@ -1,0 +1,354 @@
+13:57:10.870 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:57:10.881 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:57:12.592 [pool-2-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:12.592 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:12.592 [pool-2-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:12.592 [pool-2-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:12.592 [pool-2-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:13.007 [pool-2-thread-5] DEBUG com.intuit.karate - request:
+1 > PUT https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:13.007 [pool-2-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:13.007 [pool-2-thread-3] DEBUG com.intuit.karate - request:
+1 > DELETE https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:13.007 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 139
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:13.007 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 139
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:15.377 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 2362
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:17 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:15.377 [pool-2-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 2362
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:17 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":5001,"category":{"id":0,"name":"cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:15.377 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 2362
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:17 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:15.377 [pool-2-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 2362
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:17 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"5001"}
+
+13:57:15.377 [pool-2-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 2362
+1 < 405
+1 < Date: Tue, 29 Apr 2025 17:57:17 GMT
+1 < Content-Type: application/xml
+1 < Content-Length: 102
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+
+13:57:15.453 [pool-2-thread-5] ERROR com.intuit.karate - classpath:examples/PetStore/UpdatePet.feature:24
+Then status 200
+status code was: 405, expected: 200, response time in milliseconds: 2362, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24
+13:57:15.507 [pool-2-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'petId' with new value: 5001
+13:57:15.516 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:16.512 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:examples/PetStore/1.CreatePet.feature
+13:57:16.644 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 5 (3 remaining) classpath:examples/PetStore/2.GetPet.feature
+13:57:16.731 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:examples/PetStore/3.DeletePet.feature
+13:57:17.394 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 1876
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:19 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:17.427 [pool-2-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'petId' with new value: 5001
+13:57:17.433 [pool-2-thread-4] DEBUG com.intuit.karate - request:
+1 > PUT https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:18.028 [pool-2-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 594
+1 < 405
+1 < Date: Tue, 29 Apr 2025 17:57:20 GMT
+1 < Content-Type: application/xml
+1 < Content-Length: 102
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+
+13:57:18.032 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/PetStore/UpdatePet.feature:24
+Then status 200
+status code was: 405, expected: 200, response time in milliseconds: 594, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24
+13:57:18.033 [pool-2-thread-4] ERROR com.intuit.karate - classpath:examples/PetStore/AAAAAA.feature:10
+* call read('UpdatePet.feature') { petId: '#(petId)' }
+status code was: 405, expected: 200, response time in milliseconds: 594, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24
+classpath:examples/PetStore/AAAAAA.feature:10
+13:57:18.471 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 5 (1 remaining) classpath:examples/PetStore/AAAAAA.feature
+13:57:18.552 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 5 (0 remaining) classpath:examples/PetStore/UpdatePet.feature
+13:57:19.348 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+13:57:19.353 [main] INFO  com.intuit.karate.Suite - backed up existing 'target\karate-reports' dir to: target\karate-reports_1745949439349
+13:57:19.354 [main] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+13:57:19.381 [pool-4-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:19.381 [pool-4-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:19.382 [pool-4-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:19.387 [pool-4-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:19.387 [pool-4-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+13:57:19.390 [pool-4-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 139
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:19.392 [pool-4-thread-3] DEBUG com.intuit.karate - request:
+1 > DELETE https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:19.392 [pool-4-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:19.397 [pool-4-thread-5] DEBUG com.intuit.karate - request:
+1 > PUT https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:19.404 [pool-4-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://petstore.swagger.io/v2/pet
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 139
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:19.989 [pool-4-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 591
+1 < 405
+1 < Date: Tue, 29 Apr 2025 17:57:22 GMT
+1 < Content-Type: application/xml
+1 < Content-Length: 102
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+
+13:57:19.989 [pool-4-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 598
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:19.990 [pool-4-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 596
+1 < 404
+1 < Date: Tue, 29 Apr 2025 17:57:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":1,"type":"error","message":"Pet not found"}
+
+13:57:20.016 [pool-4-thread-5] ERROR com.intuit.karate - classpath:examples/PetStore/UpdatePet.feature:24
+Then status 200
+status code was: 405, expected: 200, response time in milliseconds: 591, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24
+13:57:20.017 [pool-4-thread-2] ERROR com.intuit.karate - classpath:examples/PetStore/2.GetPet.feature:10
+Then status 200
+status code was: 404, expected: 200, response time in milliseconds: 596, url: https://petstore.swagger.io/v2/pet/5001, response: 
+{"code":1,"type":"error","message":"Pet not found"}
+classpath:examples/PetStore/2.GetPet.feature:10
+13:57:20.021 [pool-4-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 625
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"code":200,"type":"unknown","message":"5001"}
+
+13:57:20.026 [pool-4-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 620
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:20.062 [pool-4-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'petId' with new value: 5001
+13:57:20.068 [pool-4-thread-4] DEBUG com.intuit.karate - request:
+1 > GET https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:20.227 [pool-5-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:examples/PetStore/1.CreatePet.feature
+13:57:20.275 [pool-5-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 2 of 5 (3 remaining) classpath:examples/PetStore/2.GetPet.feature
+13:57:20.310 [pool-5-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:examples/PetStore/3.DeletePet.feature
+13:57:20.715 [pool-4-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 646
+1 < 200
+1 < Date: Tue, 29 Apr 2025 17:57:22 GMT
+1 < Content-Type: application/json
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+{"id":5001,"category":{"id":0,"name":"Cat"},"name":"Pelusa","photoUrls":["string"],"tags":[{"id":0,"name":"mascota"}],"status":"available"}
+
+13:57:20.724 [pool-4-thread-4] DEBUG c.intuit.karate.core.ScenarioEngine - over-writing existing variable 'petId' with new value: 5001
+13:57:20.726 [pool-4-thread-4] DEBUG com.intuit.karate - request:
+1 > PUT https://petstore.swagger.io/v2/pet/5001
+1 > Host: petstore.swagger.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 > Accept-Encoding: gzip,deflate
+
+
+13:57:21.363 [pool-4-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 636
+1 < 405
+1 < Date: Tue, 29 Apr 2025 17:57:23 GMT
+1 < Content-Type: application/xml
+1 < Content-Length: 102
+1 < Connection: keep-alive
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+1 < Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+1 < Server: Jetty(9.2.9.v20150224)
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+
+13:57:21.365 [pool-4-thread-4] ERROR com.intuit.karate - classpath:examples/PetStore/UpdatePet.feature:24
+Then status 200
+status code was: 405, expected: 200, response time in milliseconds: 636, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24
+13:57:21.367 [pool-4-thread-4] ERROR com.intuit.karate - classpath:examples/PetStore/AAAAAA.feature:10
+* call read('UpdatePet.feature') { petId: '#(petId)' }
+status code was: 405, expected: 200, response time in milliseconds: 636, url: https://petstore.swagger.io/v2/pet/5001, response: 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><apiResponse><type>unknown</type></apiResponse>
+classpath:examples/PetStore/UpdatePet.feature:24
+classpath:examples/PetStore/AAAAAA.feature:10
+13:57:21.548 [pool-5-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 4 of 5 (1 remaining) classpath:examples/PetStore/AAAAAA.feature
+13:57:21.599 [pool-5-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 5 of 5 (0 remaining) classpath:examples/PetStore/UpdatePet.feature
